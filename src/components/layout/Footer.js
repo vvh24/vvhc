@@ -11,7 +11,7 @@ function Footer() {
         <FadeInSection>
           <Row className="mb-5">
             <Col lg={4} className="mb-4 mb-lg-0">
-              <h3 className="gradient-text fw-bold mb-4">Your Name</h3>
+              <h3 className="gradient-text fw-bold mb-4">Valeria Heredia</h3>
               <p>
                 A passionate web developer focused on creating impactful digital experiences.
               </p>
@@ -30,7 +30,7 @@ function Footer() {
             <Col lg={4}>
               <h4 className="text-white mb-4">Get In Touch</h4>
               <p className="text-white-50 mb-2">
-                Email: your.email@example.com
+                Email: valeriahcrespo@gmail.com
               </p>
               <div className="social-icons">
                 <a href="https://github.com/vvh24" target="_blank" rel="noopener noreferrer" className="social-icon">
@@ -49,7 +49,7 @@ function Footer() {
         
         <Row>
           <Col className="text-center text-white-50 py-3 border-top border-secondary">
-            <small>© {new Date().getFullYear()} Your Name. All Rights Reserved.</small>
+            <small>© {new Date().getFullYear()} Valeria Heredia. All Rights Reserved.</small>
           </Col>
         </Row>
       </Container>

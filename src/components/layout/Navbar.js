@@ -41,7 +41,7 @@ function Navigation() {
           transition={{ duration: 0.5 }}
         >
           <Navbar.Brand as={Link} to="/" className="fw-bold">
-            <span className="gradient-text">YourName</span>
+            <span className="gradient-text">Valeria Heredia</span>
           </Navbar.Brand>
         </motion.div>
         

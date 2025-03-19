@@ -56,7 +56,6 @@ function Contact() {
               <h2 className="gradient-text fw-bold mb-4">Get In Touch</h2>
               <p className="lead">
                 I'm always open to new opportunities and interesting projects.
-                Feel free to reach out!
               </p>
             </Col>
           </Row>
@@ -73,17 +72,7 @@ function Contact() {
                 </div>
                 <div>
                   <h4 className="h5 mb-1">Email</h4>
-                  <p className="mb-0">your.email@example.com</p>
-                </div>
-              </div>
-              
-              <div className="d-flex align-items-center mb-4">
-                <div className="rounded-circle bg-primary p-3 me-3">
-                  <FontAwesomeIcon icon={faPhone} className="text-white" />
-                </div>
-                <div>
-                  <h4 className="h5 mb-1">Phone</h4>
-                  <p className="mb-0">+1 (123) 456-7890</p>
+                  <p className="mb-0">valeriahcrespo@gmail.com</p>
                 </div>
               </div>
               
@@ -93,7 +82,7 @@ function Contact() {
                 </div>
                 <div>
                   <h4 className="h5 mb-1">Location</h4>
-                  <p className="mb-0">Your City, Your Country</p>
+                  <p className="mb-0">United States</p>
                 </div>
               </div>
             </FadeInSection>

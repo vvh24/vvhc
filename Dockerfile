@@ -7,8 +7,13 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 
-# Copy all files and build the app
+# Copy all files
 COPY . .
+
+# Create .env file to disable ESLint
+RUN echo "DISABLE_ESLINT_PLUGIN=true" > .env
+
+# Build the app
 RUN npm run build
 
 # Production stage

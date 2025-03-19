@@ -17,20 +17,20 @@ function Hero() {
           <Row className="align-items-center">
             <Col lg={6} className="mb-5 mb-lg-0">
               <AnimatedText 
-                text="Hello, I'm Your Name" 
+                text="Hello, There!" 
                 type="heading" 
                 className="display-4 fw-bold mb-4"
               />
               
               <FadeInSection delay={0.5} direction="up">
                 <h2 className="mb-4">
-                  <span className="gradient-text">Front-End Developer</span>
+                  <span className="gradient-text">Web & Information Systems Student</span>
                 </h2>
               </FadeInSection>
               
               <FadeInSection delay={0.7} direction="up">
                 <p className="lead mb-4">
-                  I create modern web experiences with clean code and thoughtful design.
+                  I am a senior student at NJIT. I like to create modern web experiences and thoughtful design.
                 </p>
               </FadeInSection>
               

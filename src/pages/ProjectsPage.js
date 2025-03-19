@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import { projects } from '../data/projects';
 import { AnimatedCard } from '../components/animations/AnimatedCard';
 import { FadeInSection } from '../components/animations/FadeInSection';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,6 +7,70 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 function ProjectsPage() {
+  // Define projects data directly in the component
+  const projects = [
+    {
+      id: 1,
+      title: 'E-commerce Platform',
+      description: 'A full-featured online store built with React and Node.js with payment processing and admin dashboard.',
+      image: '/assets/images/project1.jpg',
+      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
+      githubLink: 'https://github.com/yourusername/project-1',
+      liveLink: 'https://project-1-demo.com',
+      featured: true
+    },
+    {
+      id: 2,
+      title: 'Task Management App',
+      description: 'A productivity application for managing daily tasks and projects with drag-and-drop functionality.',
+      image: '/assets/images/project2.jpg',
+      technologies: ['React', 'Firebase', 'Material-UI'],
+      githubLink: 'https://github.com/yourusername/project-2',
+      liveLink: 'https://project-2-demo.com',
+      featured: true
+    },
+    {
+      id: 3,
+      title: 'Weather Dashboard',
+      description: 'A weather application showing forecasts and historical data from multiple weather APIs.',
+      image: '/assets/images/project3.jpg',
+      technologies: ['JavaScript', 'Bootstrap', 'APIs'],
+      githubLink: 'https://github.com/yourusername/project-3',
+      liveLink: 'https://project-3-demo.com',
+      featured: false
+    },
+    {
+      id: 4,
+      title: 'Portfolio Website',
+      description: 'A modern portfolio website built with React and Bootstrap with animations and dark mode.',
+      image: '/assets/images/project4.jpg',
+      technologies: ['React', 'Bootstrap', 'Framer Motion'],
+      githubLink: 'https://github.com/yourusername/my-portfolio',
+      liveLink: 'https://your-portfolio-url.com',
+      featured: true
+    },
+    {
+      id: 5,
+      title: 'Social Media Dashboard',
+      description: 'Analytics dashboard for tracking social media metrics across multiple platforms.',
+      image: '/assets/images/project5.jpg',
+      technologies: ['React', 'D3.js', 'Firebase'],
+      githubLink: 'https://github.com/yourusername/project-5',
+      liveLink: 'https://project-5-demo.com',
+      featured: false
+    },
+    {
+      id: 6,
+      title: 'Recipe Finder App',
+      description: 'Mobile-responsive application for finding recipes based on available ingredients.',
+      image: '/assets/images/project6.jpg',
+      technologies: ['JavaScript', 'APIs', 'CSS'],
+      githubLink: 'https://github.com/yourusername/project-6',
+      liveLink: 'https://project-6-demo.com',
+      featured: false
+    }
+  ];
+
   const [filter, setFilter] = useState('all');
   
   // Get unique technologies from all projects
@@ -26,7 +89,7 @@ function ProjectsPage() {
             <Col lg={8}>
               <h1 className="gradient-text fw-bold mb-4">My Projects</h1>
               <p className="lead">
-                Here are some of the projects I've worked on. You can filter by technology.
+                Here are some of the projects I&apos;ve worked on. You can filter by technology.
               </p>
             </Col>
           </Row>
@@ -63,7 +126,7 @@ function ProjectsPage() {
               <FadeInSection delay={0.1 * index}>
                 <AnimatedCard className="project-card h-100">
                   <img 
-                    src={project.image} 
+                    src={`https://via.placeholder.com/600x400?text=${project.title}`}
                     alt={project.title} 
                     className="img-fluid w-100"
                     style={{ height: '200px', objectFit: 'cover' }}

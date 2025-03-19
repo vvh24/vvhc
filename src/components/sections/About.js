@@ -3,9 +3,44 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FadeInSection } from '../animations/FadeInSection';
 import { SkillBar } from '../animations/SkillBar';
-import { skills } from '../../data/skills';
 
 function About() {
+  // Define skills data directly in the component
+  const skills = [
+    {
+      name: 'HTML & CSS',
+      percentage: 90
+    },
+    {
+      name: 'JavaScript',
+      percentage: 85
+    },
+    {
+      name: 'React',
+      percentage: 80
+    },
+    {
+      name: 'Node.js',
+      percentage: 75
+    },
+    {
+      name: 'Bootstrap',
+      percentage: 85
+    },
+    {
+      name: 'Git & GitHub',
+      percentage: 80
+    },
+    {
+      name: 'Responsive Design',
+      percentage: 90
+    },
+    {
+      name: 'Docker',
+      percentage: 70
+    }
+  ];
+
   return (
     <section className="py-5">
       <Container>
@@ -14,13 +49,13 @@ function About() {
             <FadeInSection direction="right">
               <div className="position-relative">
                 <img 
-                  src="/assets/images/profile.jpg" 
-                  alt="Your Name" 
+                  src="https://via.placeholder.com/400x500"
+                  alt="Valeria Heredia" 
                   className="img-fluid rounded" 
                   style={{ width: '100%', maxWidth: '400px' }}
                 />
                 <div className="position-absolute bottom-0 end-0 p-3 bg-primary text-white rounded">
-                  <p className="mb-0">5+ Years Experience</p>
+                  <p className="mb-0">Senior Student at NJIT</p>
                 </div>
               </div>
             </FadeInSection>
@@ -30,23 +65,23 @@ function About() {
             <FadeInSection direction="left">
               <h2 className="gradient-text fw-bold mb-4">About Me</h2>
               <p className="lead mb-4">
-                A passionate Frontend Developer based in [Your Location].
+                A passionate Web and Information student based in United States.
               </p>
               <p className="mb-4">
-                I'm a dedicated web developer with a strong focus on creating elegant, 
+                I&apos;m a dedicated student with a strong focus on creating elegant, 
                 efficient, and user-friendly web applications. With expertise in modern 
                 frontend technologies like React, I enjoy bringing ideas to life through code.
               </p>
               <p className="mb-4">
-                When I'm not coding, you can find me exploring new technologies, 
-                contributing to open-source projects, or enjoying outdoor activities.
+                When I&apos;m not coding, you can find me drawing, painting, cooking
+                 or enjoying outdoor activities.
               </p>
               
               <div className="d-flex gap-3 mb-4">
                 <Button as={Link} to="/contact" variant="primary" className="btn-modern">
                   Contact Me
                 </Button>
-                <Button as={Link} to="/assets/resume.pdf" target="_blank" variant="outline-primary" className="btn-modern">
+                <Button as={Link} to="#" target="_blank" variant="outline-primary" className="btn-modern">
                   Download CV
                 </Button>
               </div>
